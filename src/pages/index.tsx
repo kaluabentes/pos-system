@@ -1,14 +1,9 @@
 import React from 'react'
 
-import OptimusLogo from '../assets/optimus.svg'
+import { Logo } from 'styles/pages/index'
 
 function Home(): JSX.Element {
-  return (
-    <>
-      <OptimusLogo />
-      <h1>Hello, Next.js boilerplate</h1>
-    </>
-  )
+  return <Logo />
 }
 
 export default Home
