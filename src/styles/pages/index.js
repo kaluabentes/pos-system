@@ -17,7 +17,7 @@ const blink = keyframes`
 `
 
 export const Logo = styled(LogoImage)`
-  fill: #fff;
+  fill: ${props => props.theme.colors.text};
   animation-name: ${blink};
   animation-duration: 3s;
   animation-iteration-count: infinite;
