@@ -9,6 +9,10 @@ A starter point for Next.js projects.
 - `yarn start` start the production server.
 - `yarn lint` execute ESLint.
 - `yarn typecheck` execute TypeScript.
+- `yarn test` to run tests once.
+- `yarn test:watch` to run tests in watch mode.
+- `yarn test:coverage` to run coverage tests.
+- `yarn storybook` to start and open Storybook.
 
 ## What is inside
 
