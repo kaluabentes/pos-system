@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>{process.env.APP_NAME}</title>
+        <title>Next.js Boilerplate</title>
       </Head>
       <GlobalStyle />
       <Component {...pageProps} />
