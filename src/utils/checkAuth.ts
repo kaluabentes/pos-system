@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken'
 
-export default function checkAuth(req, res) {
+export default function checkAuth(req) {
   const {
     headers: { authorization }
   } = req

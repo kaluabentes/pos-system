@@ -7,7 +7,7 @@ import checkAuth from 'utils/checkAuth'
 export default async function (req: NowRequest, res: NowResponse) {
   const { method, body } = req
 
-  if (!(await checkAuth(req, res))) {
+  if (!(await checkAuth(req))) {
     res.status(401).send('Unauthorized')
     return
   }
