@@ -1,6 +1,7 @@
 import { NowRequest, NowResponse } from '@vercel/node'
 
 import UsersService from 'modules/users/UsersService'
+import checkAuth from 'utils/checkAuth'
 import connectDb from 'utils/connectDb'
 
 export default async function (req: NowRequest, res: NowResponse) {
@@ -9,6 +10,11 @@ export default async function (req: NowRequest, res: NowResponse) {
     body,
     method
   } = req
+
+  if (!(await checkAuth(req, res))) {
+    res.status(401).send({ message: 'Unauthorized' })
+    return
+  }
 
   await connectDb()
 
