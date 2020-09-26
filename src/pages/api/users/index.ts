@@ -8,7 +8,7 @@ export default async function (req: NowRequest, res: NowResponse) {
   const { method, body } = req
 
   if (!(await checkAuth(req, res))) {
-    res.status(401).send({ message: 'Unauthorized' })
+    res.status(401).send('Unauthorized')
     return
   }
 
