@@ -1,9 +1,12 @@
 import styled, { css } from 'styled-components'
+import { space } from 'styled-system'
 
-import margin from 'styles/utils/margin'
-
-export const Container = styled.button<{ primary?: boolean; block?: boolean }>`
-  ${margin}
+export const Container = styled.button<{
+  primary?: boolean
+  block?: boolean
+  margin?: string
+}>`
+  ${space}
   font-family: ${props => props.theme.typography.fontFamily};
   font-weight: 500;
   font-size: 0.875rem;

@@ -7,16 +7,23 @@ interface ButtonProps {
   onClick: () => void
   primary?: boolean
   block?: boolean
+  margin?: string
 }
 
 function Button({
   children,
   onClick,
   primary,
-  block
+  block,
+  margin
 }: ButtonProps): JSX.Element {
   return (
-    <Container primary={primary} block={block} onClick={onClick}>
+    <Container
+      margin={margin}
+      primary={primary}
+      block={block}
+      onClick={onClick}
+    >
       {children}
     </Container>
   )
