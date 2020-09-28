@@ -1,22 +1,28 @@
 import jwt from 'jsonwebtoken'
 
-export default function checkAuth(req) {
+export interface JwtUser {
+  sub: string
+  name: string
+  email: string
+}
+
+export default function checkAuth(req): Promise<JwtUser | boolean> {
   const {
     headers: { authorization }
   } = req
 
   if (!authorization) {
-    return false
+    return Promise.resolve(false)
   }
 
   return new Promise(resolve => {
-    jwt.verify(authorization, process.env.JWT_SECRET, error => {
+    jwt.verify(authorization, process.env.JWT_SECRET, (error, user) => {
       if (error) {
         resolve(false)
         return
       }
 
-      resolve(true)
+      resolve(user)
     })
   })
 }
