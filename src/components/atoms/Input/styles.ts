@@ -1,9 +1,11 @@
 import styled from 'styled-components'
+import { space } from 'styled-system'
 
 export const Container = styled.div`
   font-family: ${props => props.theme.typography.fontFamily};
   position: relative;
   margin: 0 0 20px 0;
+  ${space}
 `
 
 export const Label = styled.label`
