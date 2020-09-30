@@ -18,7 +18,7 @@ export const Label = styled.label`
 
 export const Field = styled.input`
   display: block;
-  height: 43px;
+  height: 46px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 0 15px;
