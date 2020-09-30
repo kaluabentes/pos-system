@@ -10,7 +10,7 @@ export const Container = styled.button<{
   font-family: ${props => props.theme.typography.fontFamily};
   font-weight: 500;
   font-size: 0.875rem;
-  padding: 10px 20px;
+  padding: 15px 20px;
   color: black;
   background: white;
   border-radius: 4px;
