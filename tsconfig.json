@@ -14,13 +14,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "baseUrl": "src",
-    "rootDir": "src",
-    "paths": {
-      "atoms": ["components/atoms/*"],
-      "molecules": ["components/molecules/*"],
-      "organisms": ["components/organisms/*"],
-      "templates": ["components/templates/*"]
-    }
+    "rootDir": "src"
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"]
