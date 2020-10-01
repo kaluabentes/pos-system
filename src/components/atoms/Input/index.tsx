@@ -3,7 +3,7 @@ import React from 'react'
 import { Container, Label, Field, Error } from './styles'
 
 interface InputProps {
-  onChange?: () => void
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void
   value?: string
   label: string
   error?: string
