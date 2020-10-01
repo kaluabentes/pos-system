@@ -1,8 +1,8 @@
 import { css, CSSObject, FlattenSimpleInterpolation } from 'styled-components'
 
-const SMALL = 767
-const MEDIUM = 768
-const LARGE = 1024
+export const SMALL = 767
+export const MEDIUM = 768
+export const LARGE = 1024
 
 const media = {
   sm: (styles: CSSObject): FlattenSimpleInterpolation => css`
