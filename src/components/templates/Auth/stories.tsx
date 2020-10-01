@@ -7,4 +7,4 @@ export default {
   component: Auth
 }
 
-export const Default = () => <Auth>Login template</Auth>
+export const Default = () => <Auth>Auth Templates</Auth>

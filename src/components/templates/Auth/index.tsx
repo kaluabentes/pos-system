@@ -1,22 +1,13 @@
 import React from 'react'
 
-import Paper from '../../atoms/Paper'
-import { Container, Brand, Welcome } from './styles'
+import { Container } from './styles'
 
-interface AuthProps {
+interface AuthLayoutProps {
   children: React.ReactNode
 }
 
-function Auth({ children }: AuthProps) {
-  return (
-    <Container>
-      <Paper padding="40px">
-        <Brand>POS Sys</Brand>
-        <Welcome>Welcome to POS Sys</Welcome>
-        {children}
-      </Paper>
-    </Container>
-  )
+function AuthLayout({ children }: AuthLayoutProps) {
+  return <Container>{children}</Container>
 }
 
-export default Auth
+export default AuthLayout
